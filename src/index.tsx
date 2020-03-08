@@ -7,7 +7,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import reduxThunk from 'redux-thunk';
 import { BrowserRouter } from 'react-router-dom';
 
-import { rootReducer as reducer } from './redux';
+import { rootReducer as reducer } from './reduxGlobal';
 import { MainRouter } from './router/MainRouter';
 
 const composeReduxMiddlewares = () => {
