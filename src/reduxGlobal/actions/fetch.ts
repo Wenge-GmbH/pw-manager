@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-function determine(type, data) {
+function determine(type: string, data: object) {
   return {
     type,
     data
   };
 }
 
-function fetch(type, url, callback) {
-  return dispatch => {
+function fetch(type: string, url: string, callback: Function) {
+  return (dispatch: Function) => {
     axios
       .get(url)
       .then(response => {
@@ -22,8 +22,8 @@ function fetch(type, url, callback) {
   };
 }
 
-function fetchQuery(type, url, options) {
-  return dispatch =>
+function fetchQuery(type: string, url: string, options: object) {
+  return (dispatch: Function) =>
     axios
       .post(url, options)
       .then(response => {
