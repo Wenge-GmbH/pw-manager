@@ -30,7 +30,8 @@ export const theme: theme = {
     secondary: 'Muli, sans-serif'
   },
   japaneseEmojies: {
-    blub: '(づ｡◕__◕｡)づ'
+    blub: '(づ｡◕__◕｡)づ',
+    tableFlip: '(ノಠ益ಠ)ノ彡┻━┻'
   },
   fontSize: {
     h1: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' },
