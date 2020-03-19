@@ -52,20 +52,20 @@ const H6 = styled.h6`
   ${fontSize("h6")};
 `;
 
-const Title: React.FC<TitleComponent> = (props) => {
-  switch (props.type) {
+const Title: React.FC<TitleComponent> = ({children, type, ...props}) => {
+  switch (type) {
     case 'h1':
-      return <H1 {...props} >{props.children}</H1>;
+      return <H1 {...props} >{children}</H1>;
     case 'h2':
-      return <H2 {...props} >{props.children}</H2>;
+      return <H2 {...props} >{children}</H2>;
     case 'h3':
-      return <H3 {...props} >{props.children}</H3>;
+      return <H3 {...props} >{children}</H3>;
     case 'h4':
-      return <H4 {...props} >{props.children}</H4>;
+      return <H4 {...props} >{children}</H4>;
     case 'h5':
-      return <H5 {...props} >{props.children}</H5>;
+      return <H5 {...props} >{children}</H5>;
     case 'h6':
-      return <H6 {...props} >{props.children}</H6>;
+      return <H6 {...props} >{children}</H6>;
     default:
       return null;
   }
