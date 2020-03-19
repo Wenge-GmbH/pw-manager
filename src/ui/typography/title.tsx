@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { DefaultTheme, ThemedStyledInterface } from 'styled-components';
 import { theme } from '../theme';
 
 const fontSize = (key: string) => {
@@ -15,8 +15,10 @@ type TitleComponent = {
   style?: object;
 };
 
+styled.h1``;
+
 const titlesArray = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-const titles = {};
+const titles: { [key: string]: ThemedStyledInterface<DefaultTheme> } = {};
 
 for (let i = 0; i < titlesArray.length; i++) {
   const title: string = titlesArray[i];
@@ -30,6 +32,7 @@ for (let i = 0; i < titlesArray.length; i++) {
 
 const Title: React.FC<TitleComponent> = ({ type, children }) => {
   const Title = titles[type];
+  if (!Title) return null;
   return <Title>{children}</Title>;
 };
 
