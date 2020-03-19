@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { DefaultTheme, ThemedStyledInterface } from 'styled-components';
+import styled from 'styled-components';
 import { theme } from '../theme';
 
 const fontSize = (key: string) => {
@@ -15,25 +15,49 @@ type TitleComponent = {
   style?: object;
 };
 
-styled.h1``;
-
-const titlesArray = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-const titles: { [key: string]: ThemedStyledInterface<DefaultTheme> } = {};
-
-for (let i = 0; i < titlesArray.length; i++) {
-  const title: string = titlesArray[i];
-
-  titles[title] = styled[title]`
-    font-size: 8pt;
-    color: ${props => props.theme.color || 'black'};
-    ${fontSize(title)};
-  `;
-}
+const H1 = styled.h1`
+  font-size: 8pt;
+  color: ${props => props.theme.color || 'black'};
+  ${fontSize('h1')};
+`;
+const H2 = styled.h2`
+  font-size: '12pt';
+  color: ${props => props.theme.color || 'black'};
+`;
+const H3 = styled.h4`
+  font-size: '12pt';
+  color: ${props => props.theme.color || 'black'};
+`;
+const H4 = styled.h4`
+  font-size: '12pt';
+  color: ${props => props.theme.color || 'black'};
+`;
+const H5 = styled.h5`
+  font-size: '12pt';
+  color: ${props => props.theme.color || 'black'};
+`;
+const H6 = styled.h6`
+  font-size: '12pt';
+  color: ${props => props.theme.color || 'black'};
+`;
 
 const Title: React.FC<TitleComponent> = ({ type, children }) => {
-  const Title = titles[type];
-  if (!Title) return null;
-  return <Title>{children}</Title>;
+  switch (type) {
+    case 'h1':
+      return <H1>{children}</H1>;
+    case 'h2':
+      return <H2>{children}</H2>;
+    case 'h3':
+      return <H3>{children}</H3>;
+    case 'h4':
+      return <H4>{children}</H4>;
+    case 'h5':
+      return <H5>{children}</H5>;
+    case 'h6':
+      return <H6>{children}</H6>;
+    default:
+      return null;
+  }
 };
 
 Title.defaultProps = {
