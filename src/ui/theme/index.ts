@@ -1,19 +1,39 @@
-export const theme = {
+type theme = {
   color: {
-    purple: "#02004d",
-    purpleAccent: "#6100ff",
-    mainBg: "#fdf1f7",
-    actualGrey: "#66738d"
+    [key: string]: string;
+  };
+  font: {
+    [key: string]: string;
+  };
+  japaneseEmojies: {
+    [key: string]: string;
+  };
+  fontSize: {
+    [key: string]: {
+      [key: string]: string;
+    };
+  };
+  mediaQuery: {
+    [key: string]: number;
+  };
+};
+
+export const theme: theme = {
+  color: {
+    purple: '#02004d',
+    purpleAccent: '#6100ff',
+    mainBg: '#fdf1f7',
+    actualGrey: '#66738d'
   },
   font: {
-    primary: "Open Sans, sans-serif",
-    secondary: "Muli, sans-serif"
+    primary: 'Open Sans, sans-serif',
+    secondary: 'Muli, sans-serif'
   },
   japaneseEmojies: {
-    blub: "(づ｡◕__◕｡)づ"
+    blub: '(づ｡◕__◕｡)づ'
   },
   fontSize: {
-    h1: { sm: "10pt", md: "12pt", lg: "14pt", xl: "16pt" }
+    h1: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' }
   },
   mediaQuery: {
     sm: 600,
