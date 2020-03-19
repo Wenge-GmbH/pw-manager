@@ -16,29 +16,28 @@ type TitleComponent = {
 };
 
 const H1 = styled.h1`
-  font-size: 8pt;
   color: ${props => props.theme.color || 'black'};
   ${fontSize('h1')};
 `;
 const H2 = styled.h2`
-  font-size: '12pt';
-  color: ${props => props.theme.color || 'black'};
+  color: ${props => props.theme.color || "black"};
+  ${fontSize("h2")};
 `;
 const H3 = styled.h4`
-  font-size: '12pt';
-  color: ${props => props.theme.color || 'black'};
+  color: ${props => props.theme.color || "black"};
+  ${fontSize("h3")};
 `;
 const H4 = styled.h4`
-  font-size: '12pt';
-  color: ${props => props.theme.color || 'black'};
+  color: ${props => props.theme.color || "black"};
+  ${fontSize("h4")};
 `;
 const H5 = styled.h5`
-  font-size: '12pt';
-  color: ${props => props.theme.color || 'black'};
+  color: ${props => props.theme.color || "black"};
+  ${fontSize("h5")};
 `;
 const H6 = styled.h6`
-  font-size: '12pt';
-  color: ${props => props.theme.color || 'black'};
+  color: ${props => props.theme.color || "black"};
+  ${fontSize("h6")};
 `;
 
 const Title: React.FC<TitleComponent> = ({ type, children }) => {
