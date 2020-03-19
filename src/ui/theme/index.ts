@@ -33,7 +33,12 @@ export const theme: theme = {
     blub: '(づ｡◕__◕｡)づ'
   },
   fontSize: {
-    h1: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' }
+    h1: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' },
+    h2: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' },
+    h3: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' },
+    h4: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' },
+    h5: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' },
+    h6: { sm: '10pt', md: '12pt', lg: '14pt', xl: '16pt' }
   },
   mediaQuery: {
     sm: 600,
