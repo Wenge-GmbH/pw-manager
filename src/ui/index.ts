@@ -1,3 +1,3 @@
-import { Title } from "./typography";
+import { Title, Paragraph, Text } from "./typography";
 
-export { Title };
+export { Title, Paragraph, Text };

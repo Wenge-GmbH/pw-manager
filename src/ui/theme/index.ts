@@ -39,7 +39,8 @@ export const theme: theme = {
     h3: { sm: '14pt', md: '18pt', lg: '20pt', xl: '22pt' },
     h4: { sm: '13pt', md: '17pt', lg: '19pt', xl: '21pt' },
     h5: { sm: '12pt', md: '16pt', lg: '18pt', xl: '20pt' },
-    h6: { sm: '11pt', md: '15pt', lg: '17pt', xl: '19pt' }
+    h6: { sm: '11pt', md: '15pt', lg: '17pt', xl: '19pt' },
+    p: { sm: '8pt', md: '9pt', lg: '10pt', xl: '11pt' }
   },
   mediaQuery: {
     sm: 600,

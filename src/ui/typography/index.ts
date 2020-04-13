@@ -1,3 +1,5 @@
 import Title from "./title";
+import Paragraph from "./paragraph";
+import Text from "./text";
 
-export { Title };
+export { Title, Paragraph, Text };

@@ -15,7 +15,7 @@ type TxtComponent = {
 };
 
 const Txt = styled.p`
-  font-size: 8pt;
+  font-family: ${theme.font.secondary};
   color: ${props => props.theme.color || "black"};
   ${fontSize("p")};
 `;
