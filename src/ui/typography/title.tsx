@@ -18,36 +18,42 @@ type TitleComponent = {
 const H1 = styled.h1`
   margin: 0;
   font-size: 16pt;
+  font-family: ${theme.font.primary};
   color: ${props => props.theme.color || 'black'};
   ${fontSize('h1')};
 `;
 const H2 = styled.h2`
   margin: 0;
   font-size: 15pt;
+  font-family: ${theme.font.primary};
   color: ${props => props.theme.color || "black"};
   ${fontSize("h2")};
 `;
 const H3 = styled.h3`
   margin: 0;
   font-size: 14pt;
+  font-family: ${theme.font.primary};
   color: ${props => props.theme.color || "black"};
   ${fontSize("h3")};
 `;
 const H4 = styled.h4`
   margin: 0;
   font-size: 13pt;
+  font-family: ${theme.font.primary};
   color: ${props => props.theme.color || "black"};
   ${fontSize("h4")};
 `;
 const H5 = styled.h5`
   margin: 0;
   font-size: 12pt;
+  font-family: ${theme.font.primary};
   color: ${props => props.theme.color || "black"};
   ${fontSize("h5")};
 `;
 const H6 = styled.h6`
   margin: 0;
   font-size: 11pt;
+  font-family: ${theme.font.primary};
   color: ${props => props.theme.color || "black"};
   ${fontSize("h6")};
 `;
