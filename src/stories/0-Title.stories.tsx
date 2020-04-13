@@ -32,7 +32,7 @@ export const TitleH1BisH6 = () => (
 
 export const Paragraphhhhh = () => (
   <div>
-    <Paragraph type="h1" style={{ color: "blue" }}>
+    <Paragraph style={{ color: "blue" }}>
       TEST (づ｡◕__◕｡)づ
     </Paragraph>
   </div>
@@ -40,7 +40,7 @@ export const Paragraphhhhh = () => (
 
 export const NormalText = () => (
   <div>
-    <Text type="h1" style={{ color: "blue" }}>
+    <Text style={{ color: "blue" }}>
       TEST (づ｡◕__◕｡)づ
     </Text>
   </div>
